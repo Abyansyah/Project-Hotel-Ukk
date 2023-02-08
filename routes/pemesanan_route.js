@@ -8,10 +8,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const bookController = require(`../controller/pemesanan_controller`)
 
-app.get("/", bookController.getBorrow)
+app.get("/", bookController.getPemesanan)
 // app.post("/findtipe", bookController.findKamar)
 app.post("/", bookController.addPemesanan)
-app.put("/:id", bookController.updateBorrowing)
-app.delete("/:id", bookController.deleteBorrowing)
+app.put("/:id", bookController.updatePemesanan)
+app.delete("/:id", bookController.deletePemesanan)
 
 module.exports = app

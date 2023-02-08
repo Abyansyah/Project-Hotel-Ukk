@@ -66,7 +66,7 @@ inserted`,
     });
 };
 
-exports.updateBorrowing = async (request, response) => {
+exports.updatePemesanan = async (request, response) => {
   let nama_tipe_kamar = request.body.nama_tipe_kamar;
   let nama_user = request.body.nama_user;
 
@@ -131,7 +131,7 @@ exports.updateBorrowing = async (request, response) => {
     });
 };
 
-exports.deleteBorrowing = async (request, response) => {
+exports.deletePemesanan = async (request, response) => {
   let borrowID = request.params.id;
 
   detail_pemesananModel
@@ -160,7 +160,7 @@ exports.deleteBorrowing = async (request, response) => {
     });
 };
 
-exports.getBorrow = async (request, response) => {
+exports.getPemesanan = async (request, response) => {
   let data = await pemesananModel.findAll({
     include: [
       `tipe_kamar`,
