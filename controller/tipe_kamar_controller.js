@@ -28,7 +28,7 @@ exports.findTipekamar = async (request, response) => {
   });
 };
 
-exports.addUser = (request, response) => {
+exports.addTipe = (request, response) => {
   upload(request, response, async (error) => {
     if (error) {
       return response.json({

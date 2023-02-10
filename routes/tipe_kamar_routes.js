@@ -10,7 +10,7 @@ const bookController = require(`../controller/tipe_kamar_controller`)
 
 app.get("/getAll", bookController.getAllTipekamar)
 app.post("/findtipe", bookController.findTipekamar)
-app.post("/", bookController.addUser)
+app.post("/", bookController.addTipe)
 app.put("/:id", bookController.updateTipe)
 app.delete("/:id", bookController.deleteUser)
 
