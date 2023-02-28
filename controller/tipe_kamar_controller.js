@@ -85,7 +85,7 @@ exports.updateTipe = (request, response) => {
         where: { id: id },
       });
       const oldCoverBook = selectedUser.foto;
-      const pathCover = path.join(__dirname, `../tipe_kamar`, oldCoverBook);
+      const pathCover = path.join(__dirname, `../foto_tipe_kamar`, oldCoverBook);
       if (fs.existsSync(pathCover)) {
         fs.unlink(pathCover, (error) => console.log(error));
       }

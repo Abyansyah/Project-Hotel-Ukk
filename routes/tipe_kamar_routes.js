@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const bookController = require(`../controller/tipe_kamar_controller`)
 
-app.get("/getAll", bookController.getAllTipekamar)
+app.get("/", bookController.getAllTipekamar)
 app.post("/findtipe", bookController.findTipekamar)
 app.post("/", bookController.addTipe)
 app.put("/:id", bookController.updateTipe)

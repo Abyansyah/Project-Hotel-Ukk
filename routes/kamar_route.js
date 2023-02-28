@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const bookController = require(`../controller/kamar`)
 
-app.get("/getAll", bookController.getAllkamar)
+app.get("/", bookController.getAllkamar)
 app.post("/findtipe", bookController.findKamar)
 app.post("/", bookController.addKamar)
 app.post("/check", bookController.checkTersedia);
